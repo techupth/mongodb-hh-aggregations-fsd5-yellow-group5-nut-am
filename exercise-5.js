@@ -12,7 +12,8 @@ db.pizzaOrders.aggregate([
   },
   {
     $sort: {
-      _id: -1,
+      "_id.year": -1,
+      "_id.month": -1,
     },
   },
 ]);
